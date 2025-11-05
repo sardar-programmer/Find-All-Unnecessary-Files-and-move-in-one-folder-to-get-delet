@@ -1,0 +1,11 @@
+import os
+
+# Video ka path (example)
+path = "/storage/emulated/0/Download/34.mp4"
+
+# Check karo file exist karti hai ya nahi
+if os.path.exists(path):
+    os.remove(path)
+    print("✅ Video delete ho gayi bro!")
+else:
+    print("❌ File nahi mili, path check karo!")
